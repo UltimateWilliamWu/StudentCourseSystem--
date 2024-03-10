@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="ds" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${url}"/>
+        <property name="driverClassName" value="${driverClass}"/>
+        <property name="username" value="${user}"/>
+        <property name="password" value="${password}"/>
+    </bean>
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="ds"/>
+    </bean>
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="DAO"/>
+    </bean>
+    <context:component-scan base-package="Service"/>
+    <context:annotation-config/>
+
+</beans>

@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+    background-color:#FFF;
+    color:#333;
+    font: normal 14px "Open Sans", sans-serif;
+    margin:0;
+}
+
+h1,h2,h3,p,li {
+    text-align:left;
+}
+
+a {
+    background-color:inherit;
+    color:#333;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+blockquote {
+    font: italic 18px "Times New Roman",serif;
+    width: 70%;
+    margin: 5px auto;
+    padding: 10px 50px;
+    position: relative;
+    color: #fd7e14;
+}
+
+
+blockquote:before {
+    display: block;
+    content: "\201c";
+    font: bold 120px "Times New Roman", serif;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    color: #fd7e14;
+}
+
+
+
+#pseudo-wrap1 {
+    background: #FF6600;
+    background: -moz-linear-gradient(top,  #FF6600 1%, #fd7e14 78%);
+    background: -webkit-linear-gradient(top,  #FF6600 1%,#fd7e14 78%);
+    background: linear-gradient(to bottom,  #FF6600 1%,#fd7e14 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bc00', endColorstr='#8fc800',GradientType=0 );
+    height: 195px;
+    margin:0;
+    width:100%;
+    z-index:-100;
+    position:absolute;
+    top:15px; left:0; right:0;
+}
+
+#pseudo-wrap2 {
+    background: #FF6600;
+    background: -moz-linear-gradient(top,  #FF6600 0%, #FFFAFA 98%);
+    background: -webkit-linear-gradient(top,  #FF6600 0%,#FFFAFA 98%);
+    background: linear-gradient(to bottom,  #FF6600 0%,#FFFAFA 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88b503', endColorstr='#000000',GradientType=0 );
+    height: 190px;
+    margin:0;
+    width:100%;
+    z-index:-100;
+    position:absolute;
+    top:211px; left:0; right:0;
+}
+
+#wrap {
+    width:80%;
+    background-color:#fff;
+    color:inherit;
+    padding:0;
+    margin:30px auto 15px auto;
+}
+
+#header {
+    background: #FFA500;
+    background: -moz-linear-gradient(top,  #FFA500 0%, #EE9A00 50%, #FF7F00 51%, #EE7600 100%);
+    background: -webkit-linear-gradient(top,  #FFA500 0%,#EE9A00 50%,#FF7F00 51%,#EE7600 100%);
+    background: linear-gradient(to bottom,  #FFA500 0%,#EE9A00 50%,#FF7F00 51%,#EE7600 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFA500', endColorstr='#EE7600',GradientType=0 );
+    color:#fff;
+    height:200px;
+    -webkit-box-shadow: 0 40px 20px -15px #C4D9A3;
+    -moz-box-shadow: 0 40px 20px -15px #c4d9a3;
+    box-shadow: 0 40px 20px -15px #c4d9a3;
+    border:10px solid #fff;
+    border-bottom:1px solid #fff;
+}
+
+#header h1 {
+    text-align:center;
+    padding:0;
+    margin:80px auto 0 auto;
+}
+
+#header a
+{	background-color:inherit;
+    color:#fff;
+    text-decoration:none; }
+
+#header p
+{	text-align:center;
+    margin:0 auto; }
+
+nav {
+    text-align:center;
+    margin:15px auto;
+}
+
+ul#menu {
+    list-style-type: none;
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+    width:50%;
+
+}
+
+ul#menu{margin:0;padding:0;}
+ul#menu{list-style:none;}
+ul#menu li
+{
+    float:left;
+    width:120px;
+    height:30px;
+    margin-right:1px;
+    line-height:30px;
+    text-align:center;
+}
+ul#menu  ul{
+    background-color:#ffffff;
+    margin:0;padding:0;
+    overflow:hidden;
+    height:0px;
+    /* opacity:0; */
+    /* transform:translate(0,0); */
+    /* transition:opacity 2s,transform; */
+    transition:height 1s;
+}
+
+ul#menu li:hover ul{
+    /* transform:translate(0,10px); */
+    /* opacity:1; */
+    height:120px;
+
+}
+ul#menu li a {
+    background-color:inherit;
+    color: #000;
+    /*display:block;*/
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 1px;
+}
+
+ul#menu li a:hover,ul#menu li a.current
+{	background-color:#fff;
+    color:#000;	}
+
+/* Content */
+#content
+{	text-align:left;
+    width:90%;
+    height: auto;
+    padding:0 25px 10px 25px;
+    margin:0 auto;	}
+
+
+/* Footer */
+#footer {
+    background: #FFA500;
+    background: -moz-linear-gradient(top,  #FFA500 0%, #EE9A00 50%, #FF7F00 51%, #EE7600 100%);
+    background: -webkit-linear-gradient(top,  #FFA500 0%, #EE9A00 50%, #FF7F00 51%, #EE7600 100%);
+    background: linear-gradient(to bottom, #FFA500 0%, #EE9A00 50%, #FF7F00 51%, #EE7600 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='FFA500', endColorstr='EE7600',GradientType=0 );
+    color:#fff;
+    height:40px;
+    text-align:center;
+    font-size:12px;
+    padding:0;
+    margin:0 auto;
+    border:10px solid #fff;
+}
+
+#footer a
+{	background-color:inherit;
+    color:#fff;
+    text-decoration:none;	}
+
+#footer .notice
+{	background-color:inherit;
+    color: #eee;
+    padding:0;
+    line-height:40px;
+}
+
+/* Attribution: Under Creative Commons, Attribution should not be removed or hidden */
+#attribution {
+    background-color:inherit;
+    color:#fd7e14;
+    text-align:center;
+    font-size:11px;
+    padding:5px 0;
+    margin:0 auto;
+}
+
+#attribution a
+{	background-color:inherit;
+    color:#fd7e14;
+    text-decoration:none;	}
+
+#attribution a:hover
+{	color:#999;	}
+
+/* Responsive Styles */
+
+#show-menu {display: none;}
+.responsive { text-align:left; font-weight:bold; font-size:18px; text-decoration:underline; padding: 0; display:none; margin-left:20px;}
+
+@media screen and (max-width : 700px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 16px;
+    }
+
+    blockquote:before {
+        font-size: 80px;
+    }
+
+    #footer {
+        font-size: 11px;
+    }
+
+    #attribution {
+        font-size: 10px;
+    }
+
+    ul#menu {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    #show-menu:checked ~ ul#menu {
+        display: block;
+        position: absolute;
+        width: 50%;
+        margin: 1% 0 0 -8%;
+        overflow: visible;
+        z-index: 100;
+    }
+
+    ul#menu li {
+        display: block;
+        text-align: left;
+        margin: 0 0 0 20%;
+    }
+
+    ul#menu li a {
+        display: block;
+        background-color: #fff;
+    }
+
+    ul#menu li a:hover {
+        background-color: #fd7e14;
+        color: #fd7e14;
+    }
+
+    ul#menu li a.current, ul#menu li a.active:hover {
+        background-color: #eee;
+        color: #000;
+    }
+}
+
+
+
